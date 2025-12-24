@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f4f7fb;
+  color: #333;
+}
+
+/* HERO */
+.hero, .sub-hero {
+  position: relative;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+/* LOGO */
+.logo-unpam {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 70px;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: white;
+  color: #4f46e5;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* NAVBAR */
+nav {
+  background: white;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,.1);
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* DASHBOARD MATERI */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.materi-card {
+  width: 100%;
+  max-width: 320px;
+  min-height: 160px;
+
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+
+  transition: .3s;
+}
+
+.materi-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0,0,0,.12);
+}
+
+.materi-card h3 {
+  margin: 0;
+  color: #4f46e5;
+}
+
+.materi-card p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* CARD UMUM */
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1f2937;
+  color: white;
+  margin-top: 60px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .logo-unpam {
+    width: 50px;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
